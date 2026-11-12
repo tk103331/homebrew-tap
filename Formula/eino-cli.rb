@@ -1,21 +1,21 @@
 class EinoCli < Formula
   desc "AI Agent TUI with tools, MCP and ACP support, built on Eino"
   homepage "https://github.com/tk103331/eino-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/tk103331/eino-cli/releases/download/v#{version}/eino-darwin-arm64"
-    sha256 "56422e87326105d35b021ffd6fff5a787db299dbb9b000075fa91e0e53014ebc"
+    sha256 "ee9ec8cde533bc5905a1f6437ee774794f7cd6ce5a6a3315fdce24f858bc97a3"
   elsif OS.mac?
     url "https://github.com/tk103331/eino-cli/releases/download/v#{version}/eino-darwin-amd64"
-    sha256 "8cbd31c419ca7bc73dea1127ab3919225044a50a173a993cb922746fde1c2231"
+    sha256 "779b6da4564d2ea7c1064a53fd09ed67fdecbf30a3f9aff05029600a0b52bbc0"
   elsif Hardware::CPU.arm?
     url "https://github.com/tk103331/eino-cli/releases/download/v#{version}/eino-linux-arm64"
-    sha256 "63ff68c6c94dcd5d9b9abcb9e35f37f08515db939328464f30b424a2f2b4dbd3"
+    sha256 "5f96035aa4b9a007da4ff96dc5f9bbfe9c8016947f6b84ce7e6fe9579cb18159"
   else
     url "https://github.com/tk103331/eino-cli/releases/download/v#{version}/eino-linux-amd64"
-    sha256 "8027ae69fb590bb8f6289992486175194607665c171962f2b7b174f55c558cec"
+    sha256 "794205a83cadf825201ec3fb04a5548c46c9e3b389b1f110a1e99cffecde8f2a"
   end
 
   def install
